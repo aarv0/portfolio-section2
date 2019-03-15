@@ -13,7 +13,7 @@ men.forEach((man) => {
   let manElement = document.createElement('div)
   manElement.className = 'box'
   manElement.textContent = man.name
-  mainContainer.appendChild(mainContainer)
+  mainContainer.appendChild(manElement)
   })
 
 const mainContainer = document.createElement('div')

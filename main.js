@@ -1,6 +1,10 @@
 import { films } from '../films.js'
+import { people } from '../people.js'
 
 const intro = document.querySelector('.intro')
+
+
+console.log(result)
 
 films.forEach ((film) => {
     let tile = document.createElement ('div')

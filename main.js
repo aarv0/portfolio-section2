@@ -1,19 +1,18 @@
-import { films } from '../Data/films.js'
+import { films } from '../films.js'
 
 const intro = document.querySelector('.intro')
 
-films.forEach((film)  => {
+films.forEach ((film) => {
+    let tile = document.createElement ('div')
 
-    let tile = document.createElement(tile)
-
-    let titleElement = document.createElement('.h1')
-    let crawlElement = document.createElement('.h3')
+    let titleElement = document.createElement('h1')
+    let crawlElement = document.createElement('h3')
 
     tileElement.textContent = film.title
-    tileElement.textContent = film.opening_crawl
+    crawlElement.textContent = film.opening_crawl
 
-    intro.appendChild(titleElement)
-    intro.appendChild(crawlElement)
+    tile.appendChild(titleElement)
+    tile.appendChild(crawlElement)
     intro.appendChild(tile)
 })
 

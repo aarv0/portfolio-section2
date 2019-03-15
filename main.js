@@ -11,8 +11,8 @@ films.forEach ((film) => {
     tileElement.textContent = film.title
     crawlElement.textContent = film.opening_crawl
 
-    tile.appendChild(titleElement)
-    tile.appendChild(crawlElement)
+    intro.appendChild(titleElement)
+    intro.appendChild(crawlElement)
     intro.appendChild(tile)
 })
 

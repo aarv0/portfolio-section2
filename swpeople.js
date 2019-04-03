@@ -10,7 +10,7 @@ const mainContainer = document.createElement('div')
 mainContainer.className = 'container'
 
 men.forEach((man) => {
-  let manElement = document.createElement('div)
+  let manElement = document.createElement('div')
   manElement.className = 'box'
   manElement.textContent = man.name
   mainContainer.appendChild(manElement)

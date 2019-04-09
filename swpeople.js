@@ -1,4 +1,5 @@
 import { people } from'../people.js'
+import { planets } from 'planets.js'
 
 const men = people.filter(person => person.gender === 'male')
 const women = people.filter(person => person.gender === 'female')

@@ -1,4 +1,4 @@
-import { pokemon } from '../data/pokemon.js'
+import { pokemon } from '/pokemon.js'
 
 const mainContainer = document.querySelector('.container')
 
@@ -116,6 +116,36 @@ function fetchSinglePokemon(id) {
 }
 
 class Pokemon {
+    constructor(name) {
+        this.id = 0,
+        this.name = name,
+        this.moves = [
+          {
+            move: {
+              name: prompt('Enter the first move:'),
+            },
+          },
+          {
+            move: {
+              name: prompt('Enter the second move:'),
+            },
+          },
+          {
+            move: {
+              name: prompt('Enter the third move:'),
+            },
+          },
+          {
+            move: {
+              name: prompt('Enter the fourth move:'),
+            },
+          },
+        ]
+    }
+  }
+
+/*
+class Pokemon {
   constructor(name) {
       this.id = 0,
       this.name = name,
@@ -143,6 +173,8 @@ class Pokemon {
       ]
   }
 }
+*/
+
 
 const alimonButton = document.querySelector('#alimon')
 const selectPokemonButton = document.querySelector('#fetchPokemon')

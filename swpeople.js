@@ -1,4 +1,4 @@
-import { people } from 'swpeople.js'
+import { people } from 'people.js'
 import { planets } from 'planets.js'
 
 const getLastNumber = (url) => {

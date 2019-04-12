@@ -1,61 +1,64 @@
+/* --- MAIN --- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /*margin: 0 auto;
-  width: 1260px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.box {
+    margin: 4px;
+    text-align: center;
+}
+hr{
+    display: block;
+    border-style: inset;
+    border-width: 5px;
+}
+img {
+    width: 250px;
 }
 
-.container div{
-  width: 120px;
-  height: 120px;
-  margin: 10px;
-  text-align: center;
+
+div.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
 }
-
-/*cards*/
-
-body { font-family: sans-serif; }
-
-.scene {
-  width: 200px;
-  height: 260px;
-  border: 1px solid #CCC;
-  margin: 40px 0;
-  perspective: 600px;
+div.notification {
+    text-align: center;
+    font-size: 1.5rem;
+    border: solid 5px rgb(180, 24, 24);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
 }
-
-.card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
+h1 {
+    margin: 40px;
+    font-size: 5vw;
+    font-style: oblique;
+    font-weight: bold;
 }
-
-.card.is-flipped {
-  transform: rotateY(180deg);
+.starwarsimg {
+    display: flex;
+    justify-content: center;
 }
-
-.card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  line-height: 260px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  font-size: 40px;
-  backface-visibility: hidden;
+p.welcome_text {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
-
-.card__face--front {
-  background: red;
+#create_card_button {
+    display: flex;
+    justify-content: center;
 }
-
-.card__face--back {
-  background: blue;
-  transform: rotateY(180deg);
+button {
+    width: 300px;
 }
-
